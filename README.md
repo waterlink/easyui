@@ -13,7 +13,18 @@ programming concepts.
 
 ## Usage
 
-*TODO*
+### Creating a rectangle
+
+```javascript
+new EasyUI.Rectangle({
+  left: 30, top: 30,
+  width: 60, height: 40,
+  text: "",
+  onclick: function(rectangle) {
+    // handle click event for 'rectangle' here
+  },
+})
+```
 
 ## License
 
