@@ -1,5 +1,7 @@
 var EasyUI = EasyUI || {}
 
+EasyUI.document = document
+
 EasyUI.styleAttribute = function(props) {
   for (var index = 0; index < props.length; ++index) {
     props[index] = props[index].join(": ")
@@ -17,10 +19,10 @@ EasyUI.Rectangle = function(options) {
   this.height = options.height
   this.onclick = options.onclick
 
-  this.element = document.createElement("div")
-  this.textElement = document.createElement("div")
+  this.element = EasyUI.document.createElement("div")
+  this.textElement = EasyUI.document.createElement("div")
 
-  document.body.appendChild(this.element)
+  EasyUI.document.body.appendChild(this.element)
   this.element.appendChild(this.textElement)
 
   this.element.style = EasyUI.styleAttribute(this.styleProps())
@@ -29,11 +31,7 @@ EasyUI.Rectangle = function(options) {
   }
 
   this.textElement.style = EasyUI.styleAttribute(this.textStyleProps())
-
   this.setText(options.text)
-
-  EasyUI.Rectangle.rectangles = EasyUI.Rectangle.rectangles || []
-  EasyUI.Rectangle.rectangles.push(this)
 }
 
 EasyUI.Rectangle.prototype.setText = function(text) {
