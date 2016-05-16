@@ -26,6 +26,15 @@ new EasyUI.Rectangle({
 })
 ```
 
+#### rectangle.setText(text)
+
+`setText(text)` updates the text inside of the rectangle.
+
+```javascript
+var rectangle = new EasyUI.Rectangle({ ... })
+rectangle.setText("Hello, World!")
+```
+
 ## License
 
 MIT
