@@ -35,6 +35,11 @@ var rectangle = new EasyUI.Rectangle({ ... })
 rectangle.setText("Hello, World!")
 ```
 
+## Apps built with EasyUI
+
+- [TicTacToe by @ilonade](http://ilonade.github.io/tic-tac-toe-kata-js/)
+  source: [ilonade/tic-tac-toe-kata-js](https://github.com/ilonade/tic-tac-toe-kata-js/)
+
 ## License
 
 MIT
